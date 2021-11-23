@@ -1,0 +1,72 @@
+//ESTILO MOBILE FIRST GALERÍA
+.mainGaleria {
+    p a {
+        text-decoration: none;
+    }
+    h2 {
+        padding-top: 6vw;
+        padding-bottom: .3vw;
+    }
+    section p{
+        background-color: $bg-color-footer-2;
+        color: $fnt-color-1;
+        border: 0.3vw 0 0.3vw 0 solid $fnt-color-1;
+        width: 50vw;
+        height: 50vh;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+.galeriaImageContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 1.3vw;
+    row-gap: 1.3vh;
+    grid-template-areas: 
+        "imagenUno imagenDos imagenTres"
+        "imagenCuatro imagenCinco imagenSeis"
+        "imagenSiete imagenOcho imagenNueve";
+    align-items: center;
+    justify-items: center;
+    padding: 3vw;
+}
+.imagenGaleria {
+    width: 20vw;
+    height: 30vh;
+    filter: grayscale(50%);
+        &:hover {
+            filter: none;
+            z-index: 5;
+        }
+}
+.imagenUno {
+    grid-area: imagenUno;
+}
+.imagenDos {
+    grid-area: imagenDos;
+}
+.imagenTres {
+    grid-area: imagenTres;
+}
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+.imagenCinco {
+    grid-area: imagenCinco;
+}
+.imagenSeis {
+    grid-area: imagenSeis;
+}
+.imagenSiete {
+    grid-area: imagenSiete;
+}
+.imagenOcho {
+    grid-area: imagenOcho;
+}
+.imagenNueve {
+    grid-area: imagenNueve;
+}

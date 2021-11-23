@@ -1,0 +1,19 @@
+//  ESTILO MOBILE FIRST MENU NAVEGACION
+.navbar {
+    z-index: 4;
+}
+.offcanvas {
+    height: 50%;
+    width: 40%;
+}
+.nav-item {
+    background-color: $bg-color-navItem;
+    color: $fnt-color-navItem;
+    padding: 0.3vw;
+}
+.nav-link {
+    font-size: 3vw;
+}
+.offcanvas-header {
+    background-color: $bg-color-body;
+}

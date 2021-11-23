@@ -1,0 +1,22 @@
+
+
+// ESTILO BOTON COTICE MOBILE
+.buttonCotice {
+    background-image: linear-gradient($bg-color-buttonGradient-1, $bg-color-buttonGradient-2);
+    border: .1vw solid $border-color;
+    border-radius: $brdrRad;
+    font-size: 1.5vw;
+    color: $fnt-color-3;
+    position: fixed;
+    height: 3vw;
+    right: 5vw;
+    bottom: 5vh;
+    margin: 0.5vw 0vw 0.5vw 0.5vw;
+    width: 5vw;
+    z-index: 9999;
+    overflow: hidden;
+        &:hover {
+            background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
+        }
+}
+

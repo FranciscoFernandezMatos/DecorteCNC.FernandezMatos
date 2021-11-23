@@ -1,0 +1,63 @@
+//  ESTILO MOBILE SECCIÖN PRINCIPAL 
+main {
+    position: relative;
+}
+.mainSectionContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 1.5vw 0; 
+    padding: 1vw;
+    background-color: $bg-color-mainSectionContainer;
+        h2 {
+            background-color: $bg-color-h2;
+            color: $fnt-color-2;
+            font-size: 5vw;
+            margin: 1vw 0;
+            padding: 1vw;
+            text-transform: uppercase;
+        }
+        p {
+            color: $fnt-color-1;
+            background-color: $bg-color-navItem;
+            font-size: 1.5vw;
+            margin: 2vw 0;
+            padding: 1vw;
+            text-align: justify;
+        }
+        h3 {
+            position: relative;
+            background-color:$bg-color-h3;
+            color:$fnt-color-3;
+            display: block;
+            float: right;
+            font-size: 4vw;
+            margin: 1vw;
+            padding: 1vw;
+            position: relative;
+        }
+}
+.mainIndex {
+    position: relative;
+    margin-top: 10vh;
+    padding: 1vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+        img {
+            width: 50%;
+            border: .2vw solid $border-color;
+            border-radius: .3vw;
+            margin: 2vw;
+            padding: .5vw;
+        }
+    &__pMision {
+        margin: 1vw 1vw 3vw 1vw ;
+        background-color: $bg-color-mainSectionContainer;
+        color: $fnt-color-2;
+        text-align: center;
+        font-size: 3vw;
+    }
+}

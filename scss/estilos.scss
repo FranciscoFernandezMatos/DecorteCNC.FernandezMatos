@@ -1,0 +1,35 @@
+// DECLARACION DE VARIABLES
+@import "_variables";
+// RESETEO GLOBAL
+@import "_reset";
+
+// ESTILOS COMUNES A TODAS LAS PAGINAS (INDEX.HTML) MOBILE FIRST (GALAXY S5 360x640)
+@import "_estilosComunes";
+
+//  ESTILO MOBILE FIRST ENCABEZADO 
+@import "_estiloMobFirstEncabezado";
+//  ESTILO MOBILE FIRST MENU NAVEGACION
+@import "_estiloMobFirstMenuNav";
+//  ESTILO MOBILE SECCIÖN PRINCIPAL
+@import "_estiloMobFirstMainIndex";
+//  ESTILO MOBILE PIE DE PAGINA
+@import "_estiloMobFirstFooter";
+
+// ESTILO MOBILE cotice.html
+@import "_estiloCoticeHTML";
+//ESTILO MOBILE galeria.html
+@import "_estiloGaleriaHTML";
+//ESTILO MOBILE nosotros.html
+@import "_estiloNosotrosHTML";
+// ESTILO MOBILE servicios.html
+@import "_estiloServiciosHTML";
+
+// ESTILO BOTON COTICE MOBILE
+@import "_estiloBotonCotice";
+
+// MEDIA QUERY IPAD 
+@import "_mediaQueryIpad";
+// MEDIA QUERY DESKTOP
+@import "_mediaQueryDesktop";
+
+
