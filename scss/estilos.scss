@@ -1,35 +1,230 @@
-// DECLARACION DE VARIABLES
 @import "_variables";
-// RESETEO GLOBAL
 @import "_reset";
 
-// ESTILOS COMUNES A TODAS LAS PAGINAS (INDEX.HTML) MOBILE FIRST (GALAXY S5 360x640)
-@import "_estilosComunes";
-
-//  ESTILO MOBILE FIRST ENCABEZADO 
-@import "_estiloMobFirstEncabezado";
-//  ESTILO MOBILE FIRST MENU NAVEGACION
-@import "_estiloMobFirstMenuNav";
-//  ESTILO MOBILE SECCIÖN PRINCIPAL
-@import "_estiloMobFirstMainIndex";
-//  ESTILO MOBILE PIE DE PAGINA
-@import "_estiloMobFirstFooter";
-
-// ESTILO MOBILE cotice.html
 @import "_estiloCoticeHTML";
-//ESTILO MOBILE galeria.html
 @import "_estiloGaleriaHTML";
-//ESTILO MOBILE nosotros.html
 @import "_estiloNosotrosHTML";
-// ESTILO MOBILE servicios.html
 @import "_estiloServiciosHTML";
 
-// ESTILO BOTON COTICE MOBILE
 @import "_estiloBotonCotice";
 
-// MEDIA QUERY IPAD 
-@import "_mediaQueryIpad";
-// MEDIA QUERY DESKTOP
-@import "_mediaQueryDesktop";
+@import "_mediaQueryIpad";  // 810 x 1080
+@import "_mediaQueryDesktop"; // 1200 x auto
 
+// ESTILOS COMUNES A TODAS LAS PAGINAS (INDEX.HTML) MOBILE FIRST (GALAXY S5 360x640 / Ipad 810x1080
+
+html {
+    box-sizing: border-box;
+    font-family: $fnt-family;
+    position: relative;
+}
+body {
+    background: { 
+        image: url(../Imagenes/Routercnc2.jpg);
+        attachment: fixed;
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        color: $bg-color-body;
+    }
+    color: $fnt-color-1;
+    border: 0.3vw 0 0.3vw 0 groove $border-color;
+    width: 100vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+img, audio, video, iframe, svg {
+    max-width: 100%;
+    height: auto;
+}
+//  ESTILO MOBILE FIRST ENCABEZADO 
+.headerContainer {
+    position: absolute;
+    width: 100%;
+    height: 10vh ;
+    left: 0;
+    top: 0;
+        &__img {
+        display: flex; 
+        width: 5vw;
+        position: relative;
+        z-index: 4;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &__title {
+            color: $title-color;
+            font-size: 20vw;
+            text-decoration: none;
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            top: 3vh;
+            left: 0;
+            z-index: 5;
+                &:hover {
+                    color: $title-color-hover;
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+        } 
+}
+
+
+//  ESTILO MOBILE FIRST MENU NAVEGACION
+.navbar {
+    z-index: 4;
+}
+.offcanvas {
+    height: 50%;
+    width: 40%;
+}
+.nav-item {
+    background-color: $bg-color-navItem;
+    color: $fnt-color-navItem;
+    padding: 0.3vw;
+}
+.nav-link {
+    font-size: 3vw;
+}
+.offcanvas-header {
+    background-color: $bg-color-body;
+}
+
+
+//  ESTILO MOBILE SECCIÖN PRINCIPAL 
+main {
+    position: relative;
+}
+.mainSectionContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 1.5vw 0; 
+    padding: 1vw;
+    background-color: $bg-color-mainSectionContainer;
+        h2 {
+            background-color: $bg-color-h2;
+            color: $fnt-color-2;
+            font-size: 5vw;
+            margin: 1vw 0;
+            padding: 1vw;
+            text-transform: uppercase;
+        }
+        p {
+            color: $fnt-color-1;
+            background-color: $bg-color-navItem;
+            font-size: 1.5vw;
+            margin: 2vw 0;
+            padding: 1vw;
+            text-align: justify;
+        }
+        h3 {
+            position: relative;
+            background-color:$bg-color-h3;
+            color:$fnt-color-3;
+            display: block;
+            float: right;
+            font-size: 4vw;
+            margin: 1vw;
+            padding: 1vw;
+            position: relative;
+        }
+}
+.mainIndex {
+    position: relative;
+    margin-top: 10vh;
+    padding: 1vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+        img {
+            width: 50%;
+            border: .2vw solid $border-color;
+            border-radius: .3vw;
+            margin: 2vw;
+            padding: .5vw;
+        }
+    &__pMision {
+        margin: 1vw 1vw 3vw 1vw ;
+        background-color: $bg-color-mainSectionContainer;
+        color: $fnt-color-2;
+        text-align: center;
+        font-size: 3vw;
+    }
+}
+
+
+//  ESTILO MOBILE PIE DE PAGINA
+footer {
+    background-image: linear-gradient($bg-color-footer-1, $bg-color-footer-2);
+    border-bottom: 1.3px solid $border-color;
+    width: 100%;
+    height: 6vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: inherit;
+        nav {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 2vw;
+            bottom: 1vh;
+            z-index: 100;
+                a {
+                    padding: .3vw;
+                    text-decoration: none;
+                    img {
+                        width: 3vw;
+                        position: relative;
+                        bottom: 0;
+                        opacity: .7;
+                            &:hover {
+                                width: 2.3vw;
+                                transition: 0.3s ease;
+                                color:$bg-color-h2;
+                            }
+                            &:link {
+                                color:$fnt-color-3;
+                            }
+                            &:active {
+                                color: $fnt-color-1;
+                            }
+                            &:visited {
+                                color: $bg-color-navItem; 
+                            }
+                    }
+                }
+        } 
+}
+.footerNavContainer {
+    position: relative;
+    padding: 0vw;
+}
+.footerIframeContainer {
+    position: fixed;
+    left: 3vw;
+    bottom: 3vw;
+        &__iframeMap {
+            display: block;
+            width: 7vw; 
+            height: 3vh;
+        }
+}
+.fscLogoFooter {
+    position: fixed;
+    bottom: 2vh;
+    left: 48vw;
+}
 
