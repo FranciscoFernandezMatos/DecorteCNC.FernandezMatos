@@ -38,15 +38,21 @@
 }
 .mainEquipamiento {
         &__title {
+            display:table-cell;
+            vertical-align: middle;
             position: relative;
-            width: 70vw;
-            height: 40vh;
+            margin: 10vh auto;
+            padding: 3vw;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 30vh;
             background-color: $bg-color-h2;
             color: $fnt-color-2;
             font-size: 5vw;
             text-align: center;
             text-transform: uppercase;
-            margin: 10vh auto 5vh auto;
+            // margin: 10vh auto 5vh auto;
         }
         h4 {
             background-color: $bg-color-h3;

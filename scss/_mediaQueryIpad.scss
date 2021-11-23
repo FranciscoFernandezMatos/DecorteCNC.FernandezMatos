@@ -243,15 +243,20 @@
 
     .mainEquipamiento  {
         &__title {
+            display:table-cell;
+            vertical-align: middle;
             position: relative;
-            width: 70vw;
-            height: 30vh;
+            margin: 15vh auto;
+            padding: 3vw;
+            top: 7.5vh;
+            left: 0;
+            width: 50%;
+            height: 27.5vh;
             background-color: $bg-color-h2;
             color: $fnt-color-2;
             font-size: 4vw;
-            text-align: center;
+            align-self: center;
             text-transform: uppercase;
-            margin: 10vh auto 5vh auto;
         }
         h4 {
             position: relative;

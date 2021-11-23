@@ -235,26 +235,32 @@ footer {
         background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
     }
 }
-
+// ESTILO DESKTOP galeria.html
+.carousel slide {
+    width: 50%;
+}
 // ESTILO DESKTOP servicios.html
 .mainEquipamiento {
     &__title {
+        display:table-cell;
+        vertical-align: middle;
         position: relative;
-        width: 80vw;
-        height: 30vh;
+        margin: 0 auto;
+        padding: 3vw;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 25vh;
         background-color: $bg-color-h2;
         color: $fnt-color-2;
         font-size: 4vw;
         text-align: center;
         text-transform: uppercase;
-        margin: 20vh;
-        padding: 4vw;
     }
     h4 {
         background-color: $bg-color-h3;
         color: $fnt-color-3;
-        font-size: 3vw;
-        text-align: right;
+        font-size: 2.5vw;
     }
     &__iframe {
         width: 70vw;
@@ -271,6 +277,10 @@ footer {
         font-size: 1.5vw;
         padding: 2vw 2vw 8vw 2vw;
         text-align: justify;
+        &:hover {
+            font-size: 2vw;
+            transition:1s;
+        }
     }
     &__copete {
         padding: 2vw 2vw 8vw 2vw;
