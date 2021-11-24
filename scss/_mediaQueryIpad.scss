@@ -3,40 +3,45 @@
     /*  ESTILO IPAD ENCABEZADO */
     .headerContainer {
         position: absolute;
-        width: 80vw;
-        height: 10vh ;
+        width: 100vw;
+        height: 20vh ;
         left: 0;
         top: 0;
-    &__img {
-        display: flex; 
-        width: 5vw;
-        position: relative;
-        z-index: 4;
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-    &__title {
-        color: $title-color;
-        font-size: 5vw;
-        font-style: italic;
-        font-weight: bold;
-        text-transform: uppercase;
-        position: fixed;
-        top: 1vh;
-        left: 40%;
-        z-index: 9999;
-        &:hover {
-            color: $title-color-hover;
-            text-decoration: none;
-            transition: 0.5s;
-        }
-    }
     }
 
 
     //  ESTILO IPAD MENU NAVEGACION
-    
+    .navbar {
+        height: 6%;
+        z-index: 4;
+    }
+    .navbar-brand {
+        .headerContainer__img {
+            position: relative;
+            width: 5vw;
+            z-index: 4;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            .headerContainer__title {
+                color: $title-color;
+                font-size: 5vw;
+                text-decoration: none;
+                font-style: italic;
+                font-weight: bold;
+                text-transform: uppercase;
+                position: relative;
+                top: 0vh;
+                left: 30%;
+                z-index: 5;
+                    &:hover {
+                        color: $title-color-hover;
+                        text-decoration: none;
+                        transition: 0.5s;
+                    }
+            } 
+    }
     .offcanvas {
         height: 23%;
         width: 30%;
@@ -77,12 +82,28 @@
                 }
     }
     .mainIndex {
+        position: relative;
+        margin-top: 6vh;
+        padding: 6%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .mainIndex__title {
+            display:table-cell;
+            vertical-align: middle;
             position: relative;
-            margin-top: 6vh;
-            padding: 6%;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 5vh auto;
+            padding: 3vw;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 20vh;
+            background-color: $bg-color-h2;
+            color: $fnt-color-2;
+            font-size: 5vw;
+            text-align: center;
+            text-transform: uppercase;
+        }
             img {
                 width: 35vw;
                 border: .2vw solid $border-color;
@@ -243,15 +264,20 @@
 
     .mainEquipamiento  {
         &__title {
+            display:table-cell;
+            vertical-align: middle;
             position: relative;
-            width: 70vw;
-            height: 30vh;
+            margin: 15vh auto;
+            padding: 3vw;
+            top: 7.5vh;
+            left: 0;
+            width: 50%;
+            height: 27.5vh;
             background-color: $bg-color-h2;
             color: $fnt-color-2;
             font-size: 4vw;
-            text-align: center;
+            align-self: center;
             text-transform: uppercase;
-            margin: 10vh auto 5vh auto;
         }
         h4 {
             position: relative;
