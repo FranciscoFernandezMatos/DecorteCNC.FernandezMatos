@@ -1,0 +1,27 @@
+
+
+//ESTILO MOBILE NOSOTROS
+.body-nosotros {
+    background: { 
+        image: url(../Imagenes/team.jpg);
+        attachment: fixed;
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        color: $bg-color-body;
+    }
+}
+.mainNosotros { 
+    img {
+        width: 70vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    iframe {
+        width: 70vw;
+        height: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

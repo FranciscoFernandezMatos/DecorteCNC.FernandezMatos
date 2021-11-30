@@ -1,0 +1,89 @@
+// ESTILO MOBILE FIRST COTICE.HTML
+.headerContainer {
+    width: 100%;
+    margin-top: 15vh;
+}
+// .headerContainer__navbar {
+//     width: 100%;
+// }
+
+.contForm {
+    width: 80%;
+    padding: 0vw;
+    margin-top: 8vh;
+        &__title {
+            color: $fnt-color-2;
+            text-align: center;
+        }
+        &__p {
+            width: 100%;
+            color: $fnt-color-1;
+            background-color:$bg-color-p;
+            font-size: $fnt-cotice-p;
+            padding: 2vw;
+            text-align: justify;
+            margin-top: 3vw;
+        }
+
+    .contForm__headerForm {
+        width: 80%;
+        padding: 0vw;
+        margin-top: 80vh;
+    }
+}
+
+.coticeForm {
+    // border: .5vw solid $border-color;
+    margin: 0 auto ;
+    width: 75%;
+    height: 20vh;
+    justify-content: center;
+        input[name] {
+            // border-bottom: .3vw solid $border-color;
+            border-radius: .3vw;
+        }
+        input[email] {
+            text-transform: lowercase;
+        }
+        textarea{
+            border-radius: .3vw;
+            margin: .5vw;
+            width: 50%;
+            height: 20vw;
+        }
+
+}
+.buttonCotice--submit {
+    &--submit {
+    background-image: linear-gradient($bg-color-buttonGradient-1, $bg-color-buttonGradient-2);
+    border: .1vw solid $border-color;
+    border-radius: 3vw;
+    color: $fnt-color-3;
+    font-size: 1.5vw;
+    height: 2vw;
+    margin: 0.5vw 0vw 0.5vw 7vw;
+    width: 6vw;
+    z-index: 9999;
+    overflow: hidden;
+    float: left;
+        &:hover {
+            background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
+        }
+    }
+}
+.buttonFormCotice--reset {
+    background-image: linear-gradient($bg-color-buttonGradient-1, $bg-color-buttonGradient-2);
+    border: .1vw solid $border-color;
+    border-radius: 3vw;
+    color: $fnt-color-3;
+    font-size: 3vw;
+    height: 4vw;
+    margin: 0.5vw 7vw 0.5vw 0.5vw;
+    width: 12vw;
+    z-index: 9999;
+    overflow: hidden;
+    float: right;
+        &:hover {
+            background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
+        }
+}
