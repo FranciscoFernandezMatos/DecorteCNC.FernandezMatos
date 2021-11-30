@@ -32,7 +32,7 @@
         <nav class="navbar navbar-light navbar-expand-xl bg-primary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img class="headerContainer__img" src="../Imagenes/diamond-svgrepo-com.svg" alt="Logo De Corte CNC"></a>
-                <a class="navbar-brand" href="../index.html"><h1 class="headerContainer__title">dc cnc</h1></a>
+                <a class="navbar-brand" href="../index.html"><h1 class="headerContainer__title step-5">dc cnc</h1></a>
                 <a class="navbar-brand" href="../html/Cotice.html" target="_blank"> <button class="buttonCotice">Cotice Su Proyecto</button></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -69,20 +69,14 @@
 <!-- CUERPO CENTRAL DEL SITIO -->
 <main class="mainIndex" >
     <section class="mainIndex bajada container__bajada">
-        <h2 class="bajada bajada__title">Acérquese. Encuentre soluciones hoy mismo.</h2>
+        <h2 class="bajada bajada__title step-4">Acérquese. Encuentre soluciones hoy mismo.</h2>
         <img src="../Imagenes/idea-svgrepo-com.svg" alt="Imagen Icono Diseño" class="bajada bajada__img">
-        <p class="bajada bajada__p">"Nos entregamos al compromiso de generar una plataforma de consulta, de contratos privados entre clientes y profesionales independientes.”</p>
+        <p class="bajada bajada__p step-1">"Nos entregamos al compromiso de generar una plataforma de consulta, de contratos privados entre clientes y profesionales independientes.”</p>
     </section>
-    <Section class="container-fluid contForm">
-        <div class="contForm contForm__headerForm">
-            <h2 class="contForm__title">Formulario de Contacto</h2>
-            <p class="contForm__p">Gracias por acercarse a <a link href="../HTML/nosotros.html" target="_blank">nosotros</a>. Por favor, escríbanos para empezar a hacer su proyecto realidad.</p>
-            <p class="mainIndex__pMision">"Nos entregamos al compromiso de generar una plataforma de consulta, de contratos privados entre clientes y profesionales independientes.”
-            </p>
-        </div>
-        <div class="contForm"> 
+    <Section class="container-fluid">
             <form class="coticeForm" action="" method="post">
-                <p>
+                <h2 class="contForm__title">Formulario de Contacto</h2>
+                <p class="step-0">
                     <input type="radio" name="Cotiza con Nosotros" value="Senor">
                     Sr.                
                     <input type="radio" name="Cotiza con Nosotros" value="Senora">
@@ -97,15 +91,12 @@
                 <p>
                 <input type="text" name="Nombre" placeholder="Nombre">
                 <input type="text" name="Apellido" placeholder="Apellido">
-                </p>
-                <p>
                 <input type="email" name="Email" placeholder="Email"required>
                 <input type="tel" name="Telefono" placeholder="Teléfono">
                 </p>
                 <p>
-                <textarea name="textarea" cols="40" rows="5" placeholder="Requerimientos del Proyecto"></textarea>
+                <textarea name="textarea" placeholder="Requerimientos del Proyecto"></textarea>
                 </p>
-                <p>
                 <label>Provincia</label><br>
                 <select>
                         <option>Buenos Aires</option>
@@ -133,21 +124,16 @@
                         <option>Tierra del Fuego</option>
                         <option>Tucumán</option>
                 </select>
-                </p>
-                <p>
                 <label>Envíenos su proyecto</label>
                 <input type="file" value="archivo">
-                </p>
-                <p>
                 <input type="checkbox" value="terminos" required>
                 Acepto los <a href="../HTML/Terminos.html" target="_blank">términos y condiciones.</a>
-                </p>
-                <p>
+                <div>
                 <button class="buttonFormCotice--submit" type="submit">Enviar</button>
-                <button class="buttonFormCotice--reset" type="reset">Vaciar Formulario</button>        
-            </form>    
-        </div>       
-    </Section>    
+                <button class="buttonFormCotice--reset" type="reset">Vaciar</button>      
+                </div>  
+            </form>        
+    </Section>
 </main>
 
 
