@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    margin-top: 3rem;
+    height: 76vh;
 .bajada__title {
     flex-basis: content;
     display:table-cell;
@@ -33,10 +34,7 @@
     margin-bottom: 40vh;
     padding: 1%;
 }
-&__pMision {
-    background-color: $bg-color-body;
-    display: inline-block;
-    width: 40%;
-    height: 50vh;
-    color: $fnt-color-2;
 }
+
+@import "mediaQueryIpad";
+@import "mediaQueryCel";

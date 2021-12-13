@@ -1,0 +1,58 @@
+// Ipad Safari 14.1 (810x1080)
+@media screen and (min-width: 48.1em) and (max-width: 75em) {
+.mainIndex {
+    margin-bottom: 0;
+}
+.container__bajada {
+    margin-top: 2rem;
+    height: 50vh;
+    }
+.mainSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    height: auto;
+}
+.mainEquipamiento__iframe {
+    width: 60vw;
+    height: calc(60vw*9/16);
+    background-color: $bg-color-p;
+    position: relative;
+    margin-top: 2rem;
+    left: 14vw;
+    right: 23vw;
+}
+.bajada__p {
+    margin-bottom: 20vh;
+}
+.mainNosotros {
+    &__titulo {
+        height: 30vh;
+    }
+    &__p {
+        height: 30vh;
+        text-align: left;
+    }
+    &__iframe {
+        width: 100%;
+        padding: 0;
+        height:auto;
+    }
+}
+.footer-list-container {
+    right: 17rem;
+    bottom: 0;
+    width: 90%;
+}
+.serviciosTabla {
+    margin-bottom: 3rem;
+}
+.carousel {
+    width: 60%;
+}
+.coticeForm  {
+    padding: 0 8vw;
+    text-align: center;
+}
+}

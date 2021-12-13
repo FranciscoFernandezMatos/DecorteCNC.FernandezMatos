@@ -1,7 +1,7 @@
-
-
-//ESTILO MOBILE NOSOTROS
-.body-nosotros {
+@import "variables";
+@import "header";
+@import "reset";
+body  {
     background: { 
         image: url(../Imagenes/team.jpg);
         attachment: fixed;
@@ -9,19 +9,45 @@
         size: cover;
         repeat: no-repeat;
         color: $bg-color-body;
+}
+color: $fnt-color-1;
+width: $body-width;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display:flex;
+flex-direction: column;
+position: relative;
+top: 0;
+z-index: 1;
+}
+
+.container {
+    padding-bottom: 8rem;
+}
+.mainNosotros {
+    &__titulo {
+        background-color: $bg-color-p;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 1rem;
+        border-right: 1px solid black;
+        height:55vh;
+    }
+    &__p {
+        color: $fnt-color-1;
+        background-color: $bg-color-p;
+        padding: 1rem;
+        text-align: justify;
+        height: 55vh;
+    }
+    &__iframe {
+        width: 33.333%;
+        height:55vh;
     }
 }
-.mainNosotros { 
-    img {
-        width: 70vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    iframe {
-        width: 70vw;
-        height: 70vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+
+@import "footer";
+
+@import "mediaQueryIpad";
+@import "mediaQueryCel";

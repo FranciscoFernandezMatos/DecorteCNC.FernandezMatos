@@ -1,0 +1,40 @@
+.headerContainer__img {
+    display:flex;
+    position: relative;
+    width: 3rem;
+    padding-left: .5vw;
+    z-index: 4;
+        &:hover {
+            opacity: 0.7;
+        }
+}
+.headerContainer__title {
+    display: flex;
+    color: $title-color;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+    top: .5vh;
+    left: 0;
+    z-index: 5;
+        &:hover {
+            color: $title-color-hover;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+} 
+.nav-item {
+    background-color: $bg-color-navItem;
+    color: $fnt-color-navItem;
+    padding-left: .5rem;
+
+}
+.nav-link {
+    font-size: 1rem;
+}
+.offcanvas-header {
+    background-image: linear-gradient($bg-color-footer-1, $bg-color-footer-2);
+}

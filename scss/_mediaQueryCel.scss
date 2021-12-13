@@ -1,0 +1,72 @@
+// Galaxy S5 Android 5.0 Chrome 67 (360x640)
+@media screen and (max-width: 48em) {
+    .container__bajada {
+        margin-top: 4rem;
+        height: 72vh;
+        }
+    .mainSectionContainer {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: auto;
+        position: relative;
+        height: auto;
+    }
+    .mainEquipamiento__iframe {
+        width: 80vw;
+        height: calc(80vw*9/16);
+        background-color: $bg-color-p;
+        position: relative;
+        margin-top: 2rem;
+        left: 7vw;
+        right: 13vw;
+    }
+    .mainNosotros {
+        &__titulo {
+            
+            height: auto;
+            border: none;
+            text-align: left;
+        }
+        &__p {
+            height: auto;
+            text-align: center;
+        }
+        &__iframe {
+            width: 100%;
+            padding: 0;
+            height:auto;
+        }
+    }
+    .buttonCotice {
+        font-size: 1rem;
+        color: $fnt-color-3;
+        position: fixed;
+        height: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 11vh;
+        right: 25vw;
+        width: 18ch;
+        z-index: 200;
+        overflow: hidden;
+            &:hover {
+                background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
+            }
+    }
+    .footer-list-container {
+        right: 2rem;
+        bottom: 0;
+        width: 90%;
+    }
+    .serviciosTabla {
+        display: none;
+    }
+    .carousel {
+        width: 80%;
+    }
+    .coticeForm  {
+        margin-bottom: 18vh;
+        padding: 2vw;
+        text-align: center;
+    }
+}

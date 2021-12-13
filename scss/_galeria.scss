@@ -1,3 +1,5 @@
+@import "header";
+@import "variables";
 //ESTILO MOBILE FIRST GALERÍA
 .mainGaleria {
     p a {
@@ -22,20 +24,23 @@
 }
 
 .mainProductos {
-    display:flex;
-    flex-direction: column;
+    margin: 12rem auto 9rem;
     background-color: $bg-color-p;
-    
-    &:__titleH2 {
+    .mainProductos__titleH2 {
+        margin: 1rem;
         text-transform: capitalize;
-        padding: 1vw;
+        text-align: center;
+        padding: 1rem;
         z-index: 500;
     }
-    &:__titleH3 {
-        padding: 1vw;
+    .mainProductos__p {
+        margin: 1rem;
+        padding: 1rem;
+        text-align: justify;
     }
-    &:__p {
-        padding: 1vw;
+    ul {
+        text-align: center;
+        padding: 1rem;
     }
 }
 
@@ -49,3 +54,8 @@
         display: inline-block;
     }
 }
+
+@import "footer";
+
+@import "mediaQueryIpad";
+@import "mediaQueryCel";
