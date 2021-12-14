@@ -1,7 +1,6 @@
 @import "_variables";
 @import "fuentes-fluidas";
 @import "boton";
-@import "bajada";
 @import "cotice";
 @import "galeria";
 @import "nosotros";
@@ -53,6 +52,7 @@ img, audio, video, iframe, svg {
     animation: pulse 1.5s linear infinite;
 }
 //-----------------------------------------------------SECCIÖN PRINCIPAL-------------------------------------------
+@import "bajada";
 
 main {
     position: relative;
