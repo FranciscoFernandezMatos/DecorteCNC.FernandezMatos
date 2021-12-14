@@ -376,6 +376,7 @@
   font-size: 1rem;
   padding: 0.5rem;
   width: 3rem;
+  z-index: 500;
 }
 
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
@@ -790,6 +791,7 @@
   font-size: 1rem;
   padding: 0.5rem;
   width: 3rem;
+  z-index: 500;
 }
 
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
@@ -1208,6 +1210,7 @@ body {
   font-size: 1rem;
   padding: 0.5rem;
   width: 3rem;
+  z-index: 500;
 }
 
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
@@ -1658,6 +1661,7 @@ table .columna {
   font-size: 1rem;
   padding: 0.5rem;
   width: 3rem;
+  z-index: 500;
 }
 
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
@@ -2126,6 +2130,138 @@ main {
   padding: 1%;
 }
 
+@media screen and (min-width: 48.1em) and (max-width: 75em) {
+  .mainIndex .mainIndex {
+    margin-bottom: 0;
+  }
+  .mainIndex .container__bajada {
+    margin-top: 2rem;
+    height: 50vh;
+  }
+  .mainIndex .mainSectionContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    height: auto;
+  }
+  .mainIndex .mainEquipamiento__iframe {
+    width: 60vw;
+    height: calc(60vw*9/16);
+    background-color: #e3e3e399;
+    position: relative;
+    margin-top: 2rem;
+    left: 14vw;
+    right: 23vw;
+  }
+  .mainIndex .bajada__p {
+    margin-bottom: 20vh;
+  }
+  .mainIndex .mainNosotros__titulo {
+    height: 30vh;
+  }
+  .mainIndex .mainNosotros__p {
+    height: 30vh;
+    text-align: left;
+  }
+  .mainIndex .mainNosotros__iframe {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .mainIndex .footer-list-container {
+    right: 17rem;
+    bottom: 0;
+    width: 90%;
+  }
+  .mainIndex .serviciosTabla {
+    margin-bottom: 3rem;
+  }
+  .mainIndex .carousel {
+    width: 60%;
+  }
+  .mainIndex .coticeForm {
+    padding: 0 8vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .mainIndex .container__bajada {
+    margin-top: 4rem;
+    height: 72vh;
+  }
+  .mainIndex .mainSectionContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    position: relative;
+    height: auto;
+  }
+  .mainIndex .mainEquipamiento__iframe {
+    width: 80vw;
+    height: calc(80vw*9/16);
+    background-color: #e3e3e399;
+    position: relative;
+    margin-top: 2rem;
+    left: 7vw;
+    right: 13vw;
+  }
+  .mainIndex .mainNosotros__titulo {
+    height: auto;
+    border: none;
+    text-align: left;
+  }
+  .mainIndex .mainNosotros__p {
+    height: auto;
+    text-align: center;
+  }
+  .mainIndex .mainNosotros__iframe {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .mainIndex .buttonCotice {
+    font-size: 1rem;
+    color: #090a95;
+    position: fixed;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 11vh;
+    right: 25vw;
+    width: 18ch;
+    z-index: 200;
+    overflow: hidden;
+  }
+  .mainIndex .buttonCotice:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c2a94d), to(#c1c1c1));
+    background-image: linear-gradient(#c2a94d, #c1c1c1);
+  }
+  .mainIndex .footer-list-container {
+    right: 2rem;
+    bottom: 0;
+    width: 90%;
+  }
+  .mainIndex .serviciosTabla {
+    display: none;
+  }
+  .mainIndex .carousel {
+    width: 80%;
+  }
+  .mainIndex .coticeForm {
+    margin-bottom: 18vh;
+    padding: 2vw;
+    text-align: center;
+  }
+}
+
 .mainSectionContainer {
   display: -ms-grid;
   display: grid;
@@ -2212,6 +2348,7 @@ main {
   font-size: 1rem;
   padding: 0.5rem;
   width: 3rem;
+  z-index: 500;
 }
 
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
