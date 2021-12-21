@@ -1,6 +1,25 @@
 @import "header";
 @import "variables";
 //ESTILO MOBILE FIRST GALERÍA
+
+body#Galeria  {
+    background: { 
+        image: url(../Imagenes/fondo-galeria.jpg);
+        attachment: fixed;
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+color: $fnt-color-1;
+width: $body-width;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 0;
+z-index: 1;
+}
+
 .mainGaleria {
     p a {
         text-decoration: none;

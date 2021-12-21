@@ -1,22 +1,20 @@
 @import "variables";
 @import "header";
 @import "reset";
-body  {
+
+body#Nosotros  {
     background: { 
-        image: url(../Imagenes/team.jpg);
+        image: url(../Imagenes/team-escritorio.jpg);
         attachment: fixed;
         position: center;
         size: cover;
         repeat: no-repeat;
-        color: $bg-color-body;
-}
+    }
 color: $fnt-color-1;
 width: $body-width;
 height: auto;
 margin-left: auto;
 margin-right: auto;
-display:flex;
-flex-direction: column;
 position: relative;
 top: 0;
 z-index: 1;

@@ -7,7 +7,7 @@
 @import "servicios";
 @import "_reset";
 //----------------------------------------------------------GLOBAL-------------------------------------------------
-body  {
+body#Home  {
     background: { 
         image: url(../Imagenes/index-bgimage.jpg);
         attachment: fixed;
@@ -53,7 +53,6 @@ img, audio, video, iframe, svg {
 }
 //-----------------------------------------------------SECCIÖN PRINCIPAL-------------------------------------------
 
-
 main {
     position: relative;
 }
@@ -73,6 +72,9 @@ main {
     grid-template-columns: repeat(4, 1fr);
     position: relative;
     height: auto;
+        .imgZoom {
+            transition: all 0.5s ease-in-out;
+        }
 }
 .mainSection__item {
     background-color: $bg-color-mainSectionContainer;
@@ -94,8 +96,7 @@ main {
         background-color: $bg-color-navItem;
         margin: 1vw 0;
         padding: 1vw;
-        text-align: justify;
-        text-align: center;
+        text-align: left;
     }
     h3 {
         position: relative;

@@ -55,6 +55,29 @@
   background-image: linear-gradient(#c2a94d, #c1c1c1);
 }
 
+.buttonServicios {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1c1c1), to(#c2a94d));
+  background-image: linear-gradient(#c1c1c1, #c2a94d);
+  border: 0.1vw solid #070a55dd;
+  border-radius: 3vw;
+  font-size: 1rem;
+  color: #090a95;
+  position: fixed;
+  height: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 2vh;
+  left: 3vw;
+  width: 18ch;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.buttonServicios:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c2a94d), to(#c1c1c1));
+  background-image: linear-gradient(#c2a94d, #c1c1c1);
+}
+
 @media screen and (min-width: 48.1em) and (max-width: 75em) {
   .mainIndex {
     margin-bottom: 0;
@@ -205,7 +228,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #0d00fddd;
+  color: #e2e2e2aa;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
@@ -218,7 +241,7 @@
 }
 
 .headerContainer__title:hover {
-  color: #41c7dfaa;
+  color: #ffffffdd;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -237,6 +260,22 @@
 .offcanvas-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3e3e3ecc), to(#0d6efdcc));
   background-image: linear-gradient(#3e3e3ecc, #0d6efdcc);
+}
+
+body#Cotice {
+  background-image: url(../Imagenes/Spraying-finishing.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #070a55;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 
 .contForm {
@@ -366,15 +405,15 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 5vh;
+  height: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
 }
 
 .footer-list-container .footer-list-item {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   width: 3rem;
   z-index: 500;
 }
@@ -661,7 +700,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #0d00fddd;
+  color: #e2e2e2aa;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
@@ -674,7 +713,7 @@
 }
 
 .headerContainer__title:hover {
-  color: #41c7dfaa;
+  color: #ffffffdd;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -693,6 +732,22 @@
 .offcanvas-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3e3e3ecc), to(#0d6efdcc));
   background-image: linear-gradient(#3e3e3ecc, #0d6efdcc);
+}
+
+body#Galeria {
+  background-image: url(../Imagenes/fondo-galeria.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #070a55;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 
 .mainGaleria p a {
@@ -781,15 +836,15 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 5vh;
+  height: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
 }
 
 .footer-list-container .footer-list-item {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   width: 3rem;
   z-index: 500;
 }
@@ -1076,7 +1131,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #0d00fddd;
+  color: #e2e2e2aa;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
@@ -1089,7 +1144,7 @@
 }
 
 .headerContainer__title:hover {
-  color: #41c7dfaa;
+  color: #ffffffdd;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1124,25 +1179,17 @@ html {
   position: relative;
 }
 
-body {
-  background-image: url(../Imagenes/team.jpg);
+body#Nosotros {
+  background-image: url(../Imagenes/team-escritorio.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #0d6efdcc;
   color: #070a55;
   width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
   top: 0;
   z-index: 1;
@@ -1200,15 +1247,15 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 5vh;
+  height: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
 }
 
 .footer-list-container .footer-list-item {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   width: 3rem;
   z-index: 500;
 }
@@ -1495,7 +1542,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #0d00fddd;
+  color: #e2e2e2aa;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
@@ -1508,7 +1555,7 @@ body {
 }
 
 .headerContainer__title:hover {
-  color: #41c7dfaa;
+  color: #ffffffdd;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1527,6 +1574,22 @@ body {
 .offcanvas-header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3e3e3ecc), to(#0d6efdcc));
   background-image: linear-gradient(#3e3e3ecc, #0d6efdcc);
+}
+
+body#Servicios {
+  background-image: url(../Imagenes/CNC-routing-services.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #070a55;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 
 .mainEquipamiento__title {
@@ -1568,7 +1631,7 @@ body {
   color: #070a55;
   background-color: #e3e3e399;
   padding: .5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .mainEquipamiento__copete {
@@ -1651,15 +1714,15 @@ table .columna {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 5vh;
+  height: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
 }
 
 .footer-list-container .footer-list-item {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   width: 3rem;
   z-index: 500;
 }
@@ -1942,7 +2005,7 @@ html {
   position: relative;
 }
 
-body {
+body#Home {
   background-image: url(../Imagenes/index-bgimage.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -1981,7 +2044,7 @@ img, audio, video, iframe, svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #0d00fddd;
+  color: #e2e2e2aa;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
@@ -1994,7 +2057,7 @@ img, audio, video, iframe, svg {
 }
 
 .headerContainer__title:hover {
-  color: #41c7dfaa;
+  color: #ffffffdd;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2271,6 +2334,11 @@ main {
   height: auto;
 }
 
+.mainSectionContainer .imgZoom {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .mainSection__item {
   background-color: #024dbccc;
   margin: 0vh 1vw 12vh;
@@ -2295,8 +2363,7 @@ main {
   background-color: #d3d3d344;
   margin: 1vw 0;
   padding: 1vw;
-  text-align: justify;
-  text-align: center;
+  text-align: left;
 }
 
 .mainSection__item h3 {
@@ -2338,15 +2405,15 @@ main {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 5vh;
+  height: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
 }
 
 .footer-list-container .footer-list-item {
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem;
   width: 3rem;
   z-index: 500;
 }

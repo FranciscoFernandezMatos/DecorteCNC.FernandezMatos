@@ -1,5 +1,24 @@
 @import "_variables";
 @import "header";
+
+body#Servicios  {
+    background: { 
+        image: url(../Imagenes/CNC-routing-services.jpg);
+        attachment: fixed;
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+color: $fnt-color-1;
+width: $body-width;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 0;
+z-index: 1;
+}
+
 .mainEquipamiento {
         &__title {
             display:table-cell;
@@ -37,7 +56,7 @@
             color: $fnt-color-1;
             background-color: $bg-color-p;
             padding: .5rem;
-            text-align: center;
+            text-align: left;
         }
         &__copete {
             padding: .5rem;

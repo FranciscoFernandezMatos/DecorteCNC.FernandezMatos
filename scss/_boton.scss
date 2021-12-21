@@ -21,5 +21,25 @@
         }
 }
 
+.buttonServicios {
+    background-image: linear-gradient($bg-color-buttonGradient-1, $bg-color-buttonGradient-2);
+    border: .1vw solid $border-color;
+    border-radius: $brdrRad;
+    font-size: 1rem;
+    color: $fnt-color-3;
+    position: fixed;
+    height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 2vh;
+    left: 3vw;
+    width: 18ch;
+    z-index: 200;
+    overflow: hidden;
+        &:hover {
+            background-image: linear-gradient($bg-color-buttonGradient-2, $bg-color-buttonGradient-1);
+        }
+}
+
 @import "mediaQueryIpad";
 @import "mediaQueryCel";

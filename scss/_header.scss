@@ -8,6 +8,7 @@
             opacity: 0.7;
         }
 }
+
 .headerContainer__title {
     display: flex;
     color: $title-color;
@@ -25,16 +26,17 @@
             text-decoration: none;
             transition: 0.5s;
         }
-} 
+}
+
 .nav-item {
     background-color: $bg-color-navItem;
     color: $fnt-color-navItem;
     padding-left: .5rem;
-
 }
 .nav-link {
     font-size: 1rem;
 }
+
 .offcanvas-header {
     background-image: linear-gradient($bg-color-footer-1, $bg-color-footer-2);
 }
